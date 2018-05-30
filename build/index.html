@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sedona Index</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Pixel Glass -->
+    <!-- <style>
+        HTML {
+            background-repeat: no-repeat;
+            background-position: 50% 0;
+            /* По умолчанию мобильный макет */
+            background-image: url("img/pixel-glass/index.png");
+        }
+
+        BODY {
+            opacity: .5;
+        }
+
+    </style>
+    <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+    <script src="../node_modules/pixel-glass/script.js"></script> -->
+    <!-- // Pixel Glass -->
+
+</head>
+
+<body>
+
+
+    <header class="page__header">
+        <div class="logo">
+            <a class="logo__link">
+                <img class="logo__image" src="img/logo.png" alt="Sedona" width="138" height="70">
+            </a>
+        </div>
+
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Информация</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Фото и видео</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Карта штата</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="hotels.html" class="navigation__link">Гостиницы</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page__main">
+
+        <section class="welcome">
+            <div class="welcome__photo">
+                <img class="welcome__image" src="img/welcome-image.jpg" alt="Sedona" width="1200" height="508">
+            </div>
+            <div class="welcome-bottom">
+                <h2 class="welcome__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+                <p class="welcome__reason">Рассмотрим 5 причин, по которым Седона круче чем Гранд каньон!</p>
+            </div>
+        </section>
+
+
+        <section class="advantage">
+
+                <div class="advantage__row advantage__row--photo">
+                    <div class="advantage__description">
+                        <h3 class="advantage__title">Настоящий городок</h3>
+                        <p class="advantage__number">- №1 -</p>
+                        <p class="advantage__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    </div>
+                    <div class="advantage__photo">
+                        <img class="advantage__image" src="">
+                    </div>
+                </div>
+
+                <div class="advantage__row advantage__row--icon">
+                    <div class="advantage__item">
+                        <h3 class="advantage__title">Жилье</h3>
+                        <p class="advantage__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+
+                    </div>
+                    <div class="advantage__item">
+                        <h3 class="advantage__title">Еда</h3>
+                        <p class="advantage__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+
+                    </div>
+                    <div class="advantage__item">
+                        <h3 class="advantage__title">Сувениры</h3>
+                        <p class="advantage__text">Не только китайского, но и местного производства!</p>
+                    </div>
+                </div>
+
+                <div class="advantage__row advantage__row--photo">
+                    <div class="advantage__description">
+                        <h3 class="advantage__title">Там есть мост дьявола</h3>
+                        <p class="advantage__number">- №2 -</p>
+                        <p class="advantage__text">Да, по нему можно пройти! Если конено вы осмелитесь</p>
+                    </div>
+                    <div class="advantage__photo">
+                        <img class="advantage__image" src="">
+                    </div>
+                </div>
+
+                <div class="advantage__row advantage__row--icon">
+                    <div class="advantage__item">
+                        <h3 class="advantage__title">Небольшая площадь</h3>
+                        <p class="advantage__number">- №3 -</p>
+                        <p class="advantage__text">Все достопримечательности находятся очень близко</p>
+
+                    </div>
+                    <div class="advantage__item">
+                        <h3 class="advantage__title">Красивая дорога</h3>
+                        <p class="advantage__number">- №4 -</p>
+                        <p class="advantage__text">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+
+                    </div>
+                    <div class="advantage__item">
+                        <h3 class="advantage__title">Мало туристов</h3>
+                        <p class="advantage__number">- №5 -</p>
+                        <p class="advantage__text">Большинство едет в гранд каньон и толпится там</p>
+                    </div>
+                </div>
+
+        </section>
+
+        <section class="search">
+            <h2 class="search__title">Заинтересовались?</h2>
+            <p class="search__tagline">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <a class="search__link">Поиск гостиницы в Седоне</a>
+            <form class="search__form hotel-search" action="https://echo.htmlacademy.ru" method="get">
+
+                <div class="hotel-search__item">
+                    <label class="hotel-search__label" for="arrival">Дата Заезда:</label>
+                    <input class="hotel-search__input" type="text" id="arrival" name="arrival" value="24 апреля 2017">
+                    <img src="img/calendar.svg" alt="calendar" width="22" height="22">
+                </div>
+
+                <div class="hotel-search__item">
+                    <label class="hotel-search__label" for="departure">Дата выезда:</label>
+                    <input class="hotel-search__input" type="text" id="departure" name="departure" value="4 июля 2017">
+                    <img class="hotel-search__calendar" src="img/calendar.svg" alt="Календарь" width="22" height="22">
+                </div>
+
+                <div class="hotel-search__item">
+                    <label class="hotel-search__label" for="adults">Взрослые:</label>
+                    <span class="hotel-search__minus" aria-label="Меньше" tabindex="0">–</span>
+                    <input class="hotel-search__input" type="text" id="adults" name="adults" value="2">
+                    <span class="hotel-search__plus" aria-label="Больше" tabindex="0">+</span>
+
+                </div>
+
+                <div class="hotel-search__item">
+                    <label class="hotel-search__label" for="children">Дети:</label>
+                    <span class="hotel-search__minus" aria-label="Меньше" tabindex="0">–</span>
+                    <input class="hotel-search__input" type="text" id="children" name="children" value="0">
+                    <span class="hotel-search__plus" aria-label="Больше" tabindex="0">+</span>
+
+                </div>
+
+                <a class="hotel-search__button">Найти</a>
+            </form>
+        </section>
+
+        <section class="map" aria-label="Седона">
+            <iframe style="border:0" tabindex="-1" src=""></iframe>
+        </section>
+
+
+
+    </main>
+    <footer class="page__footer">
+        <section class="site-footer">
+            <div class="site-footer__hashtag">
+                <a class="hashtag__link" href="#">#VisitSedona</a>
+            </div>
+            <div class="site-footer__social social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <span class="visually-hidden">Twitter</span>
+                        </a>
+
+                    </li>
+                </ul>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <span class="visually-hidden">Facebbok</span>
+                        </a>
+
+                    </li>
+                </ul>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <span class="visually-hidden">Youtube</span>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="site-footer__copyright copyright">
+                <p class="copyright__text">Website by</p>
+                <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">
+                    <img class="copyright__img" src="img/logo-academy.svg" width="115" height="41" alt="HTML Academy">
+                </a>
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>

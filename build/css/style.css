@@ -1,0 +1,15 @@
+section,
+header,
+footer {
+  outline: 1px dashed red; }
+
+.tri {
+  font-size: 0;
+  width: 0;
+  height: 0;
+  margin-right: 12px;
+  cursor: pointer;
+  border: 5px solid transparent;
+  border-top-width: 0;
+  border-bottom-width: 10px;
+  border-bottom-color: #cdcdcd; }
