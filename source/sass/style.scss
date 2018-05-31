@@ -1,9 +1,24 @@
 @import "blocks/global";
+@import "blocks/navigation";
+@import "blocks/logo";
+
+@import "blocks/page";
+@import "blocks/welcome";
+@import "blocks/advantage";
+@import "blocks/hotel-search";
+@import "blocks/search";
+@import "blocks/map";
+
+@import "blocks/site-footer";
+@import "blocks/social";
+@import "blocks/copyright";
+@import "blocks/hashtag";
+
 
 
 
 .tri {
-   
+
         font-size: 0;
         width: 0;
         height: 0;
