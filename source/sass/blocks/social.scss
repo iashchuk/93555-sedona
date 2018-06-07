@@ -9,34 +9,49 @@
   width: 150px;
   margin: 0 auto;
   padding: 0;
+
+  list-style: none;
 }
 
 
 .social__item {
-  margin-top: 10px;
-
-  font-size: 0;
-}
-
-.social__link {
-  display: inline-block;
-  width: 46px;
-  height: 48px;
-
-  vertical-align: baseline;
+  margin-top: 5px;
 
   background-color: #81b3d2;
 }
 
 
+.social__link {
+  display: block;
+  width: 46px;
+  height: 48px;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    opacity: 0.3;
+  }
+}
+
+
 .social__link--twitter {
-  background: url("../img/twitter.jpg") no-repeat;
+  background-image: url("../img/twitter.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .social__link--fb {
-  background: url("../img/fb.jpg") no-repeat;
+  background-image: url("../img/fb.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .social__link--youtube {
-  background: url("../img/youtube.jpg") no-repeat;
+  background-image: url("../img/youtube.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }

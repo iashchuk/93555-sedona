@@ -1,4 +1,7 @@
 .search {
+  position: relative;
+  z-index: 10;
+
   width: 568px;
   margin: 0 auto;
 
@@ -40,4 +43,15 @@
   text-transform: uppercase;
 
   background-color: #766357;
+
+  &:hover,
+  &:focus {
+    background-color: #604e43;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #503e33;
+  }
 }

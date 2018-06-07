@@ -21,6 +21,17 @@
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+
+  &:hover[href],
+  &:focus[href] {
+    color: #81b3d2;
+  }
+
+  &:active[href] {
+    color: #000000;
+
+    opacity: 0.3;
+  }
 }
 
 .navigation__item:nth-child(4n+2) {

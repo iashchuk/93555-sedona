@@ -42,16 +42,16 @@
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Информация</a>
+                        <a class="navigation__link" href="#">Информация</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Фото и видео</a>
+                        <a class="navigation__link" href="#">Фото и видео</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Карта штата</a>
+                        <a class="navigation__link" href="#">Карта штата</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Гостиницы</a>
+                        <a class="navigation__link">Гостиницы</a>
                     </li>
                 </ul>
             </nav>
@@ -68,15 +68,15 @@
                         <ul class="option-filter__list">
                             <li class="option-filter__item">
                                 <input class="option-filter__checkbox" type="checkbox" id="pool" name="pool" checked>
-                                <label class="option-filter__label" for="pool">Бассейн</label>
+                                <label class="option-filter__label" for="pool"  tabindex="0">Бассейн</label>
                             </li>
                             <li class="option-filter__item">
                                 <input class="option-filter__checkbox" type="checkbox" id="parking" name="parking">
-                                <label class="option-filter__label" for="parking">Парковка</label>
+                                <label class="option-filter__label" for="parking" tabindex="0">Парковка</label>
                             </li>
                             <li class="option-filter__item">
                                 <input class="option-filter__checkbox" type="checkbox" id="wifi" name="wifi">
-                                <label class="option-filter__label" for="wifi">Wi-Fi</label>
+                                <label class="option-filter__label" for="wifi" tabindex="0">Wi-Fi</label>
                             </li>
                         </ul>
                     </div>
@@ -85,15 +85,15 @@
                         <ul class="option-filter__list">
                             <li class="option-filter__item">
                                 <input class="option-filter__checkbox" type="checkbox" id="hotel" name="hotel" checked>
-                                <label class="option-filter__label" for="hotel">Гостиница</label>
+                                <label class="option-filter__label" for="hotel" tabindex="0">Гостиница</label>
                             </li>
                             <li class="option-filter__item">
                                 <input class="option-filter__checkbox" type="checkbox" id="motel" name="motel" checked>
-                                <label class="option-filter__label" for="motel">Мотель</label>
+                                <label class="option-filter__label" for="motel" tabindex="0">Мотель</label>
                             </li>
                             <li class="option-filter__item">
                                 <input class="option-filter__checkbox" type="checkbox" id="apartments" name="apartments" checked>
-                                <label class="option-filter__label" for="apartments">Апартаменты</label>
+                                <label class="option-filter__label" for="apartments" tabindex="0">Апартаменты</label>
                             </li>
                         </ul>
                     </div>
@@ -134,7 +134,7 @@
                         <p class="sort__name">Сортировка:</p>
                         <ul class="sort__list">
                             <li class="sort__item">
-                                <a class="sort__link" href="#">По цене</a>
+                                <a class="sort__link sort-link--active">По цене</a>
                             </li>
                             <li class="sort__item">
                                 <a class="sort__link" href="#">По типу</a>
@@ -146,12 +146,12 @@
                     </div>
 
                     <div class="sort__direction">
-                        <div class="sort__up">
+                        <a class="sort__up" href="#">
                             <span class="visually-hidden">По возрастанию</span>
-                        </div>
-                        <div class="sort__down">
+                        </a>
+                        <a class="sort__down sort__down--active">
                             <span class="visually-hidden">По убыванию</span>
-                        </div>
+                        </a>
 
                     </div>
 
@@ -162,7 +162,9 @@
                         <img class="card__image" src="img/amara.jpg" alt="Amara Resort & Spa" width="135" height="90">
                     </div>
                     <div class="card__description">
-                        <h1 class="card__title">Amara Resort &amp; Spa</h1>
+                        <h1 class="card__title">
+                            <a class="card__title-link" tabindex="0">Amara Resort &amp; Spa</a>
+                        </h1>
                         <div class="card__info">
                             <p class="card__text card__text--house">Гостиница</p>
                             <p class="card__text card__text--price">От 4000 Р.</p>
@@ -190,7 +192,9 @@
                         <img class="card__image" src="img/desert.jpg" alt="Desert Quail Inn" width="135" height="90">
                     </div>
                     <div class="card__description">
-                        <h1 class="card__title">Desert Quail Inn</h1>
+                        <h1 class="card__title">
+                            <a class="card__title-link" tabindex="0">Desert Quail Inn</a>
+                        </h1>
                         <div class="card__info">
                             <p class="card__text">Мотель</p>
                             <p class="card__text">От 3000 Р.</p>
@@ -217,7 +221,9 @@
                         <img class="card__image" src="img/villas.jpg" alt="Villas at Poco Diablo" width="135" height="90">
                     </div>
                     <div class="card__description">
-                        <h1 class="card__title">Villas at Poco Diablo</h1>
+                        <h1 class="card__title">
+                            <a class="card__title-link" tabindex="0">Villas at Poco Diablo</a>
+                        </h1>
                         <div class="card__info">
                             <p class="card__text">Апартаменты</p>
                             <p class="card__text">От 2000 Р.</p>
@@ -237,14 +243,6 @@
                         <div class="card__mark">Рейтинг: 9,2</div>
                     </div>
                 </article>
-
-
-
-
-
-
-
-
             </section>
 
         </main>
@@ -252,7 +250,7 @@
         <footer class="page__footer">
             <section class="site-footer">
                 <div class="site-footer__hashtag hashtag">
-                    <a class="hashtag__link" href="#">#VisitSedona</a>
+                    <p class="hashtag__link">#VisitSedona</p>
                 </div>
                 <div class="site-footer__social social">
                     <ul class="social__list">

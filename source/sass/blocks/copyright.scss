@@ -21,3 +21,15 @@
   line-height: 26px;
   text-transform: uppercase;
 }
+
+.copyright__link {
+  &:hover,
+  &:focus {
+    filter: brightness(0) saturate(100%) invert(76%) sepia(26%) saturate(510%) hue-rotate(162deg) brightness(86%) contrast(89%);
+  }
+
+  &:active {
+    opacity: 0.5;
+    filter: invert(0.5);
+  }
+}

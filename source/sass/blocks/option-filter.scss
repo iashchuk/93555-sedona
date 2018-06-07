@@ -50,3 +50,15 @@
 .option-filter__checkbox:checked ~ .option-filter__label::after {
   background-image: url("../img/checkbox-on.svg");
 }
+
+.option-filter__checkbox:disabled + .option-filter__label {
+  &::after {
+    background-image: url("../img/checkbox-off-disabled.svg");
+  }
+}
+
+.option-filter__checkbox:checked:disabled + .option-filter__label {
+  &::after {
+    background-image: url("../img/checkbox-on-disabled.svg");
+  }
+}

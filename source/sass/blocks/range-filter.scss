@@ -100,7 +100,8 @@
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     top: -10px;
 
     width: 22px;
@@ -133,4 +134,11 @@
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #000000;
+
+    background-color: #ffffff;
+  }
 }

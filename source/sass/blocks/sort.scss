@@ -44,10 +44,27 @@
 .sort__link {
   font-size: 12px;
   line-height: 18px;
-  color: #000000;
+  color: #cdcdcd;
   text-transform: uppercase;
 
-  opacity: 0.3;
+  border-bottom: 1px dotted #81b3d2;
+
+  &:hover[href],
+  &:focus {
+    color: #81b3d2;
+  }
+
+  &:active[href] {
+    color: #000000;
+
+    border: none;
+  }
+}
+
+.sort-link--active {
+  color: #81b3d2;
+
+  border: none;
 }
 
 .sort__direction {
@@ -68,8 +85,21 @@
   border-top-width: 0;
   border-bottom-width: 10px;
   border-bottom-color: #cdcdcd;
-  cursor: pointer;
+
+  &:hover[href],
+  &:focus {
+    border-bottom-color: #000000;
+  }
+
+  &:active[href] {
+    border-bottom-color: #81b3d2;
+  }
 }
+
+.sort__up--active {
+  border-bottom-color: #81b3d2;
+}
+
 
 .sort__down {
   width: 0;
@@ -82,5 +112,17 @@
   border-top-width: 10px;
   border-top-color: #cdcdcd;
   border-bottom-width: 0;
-  cursor: pointer;
+
+  &:hover[href],
+  &:focus {
+    border-top-color: #000000;
+  }
+
+  &:active[href] {
+    border-top-color: #81b3d2;
+  }
+}
+
+.sort__down--active {
+  border-top-color: #81b3d2;
 }

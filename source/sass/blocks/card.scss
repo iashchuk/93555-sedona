@@ -33,6 +33,29 @@
 }
 
 
+.card__title-link {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #000000;
+
+    opacity: 0.3;
+  }
+}
+
+
+
 
 .card__info {
   display: flex;
@@ -72,12 +95,26 @@
   text-transform: uppercase;
 
   background-color: #81b3d2;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .card__link--book {
   width: 142px;
 
   background-color: #766357;
+
+  &:hover,
+  &:focus {
+    background-color: #604e43;
+  }
 }
 
 .card__rating {
@@ -100,7 +137,8 @@
   line-height: 15px;
   color: #81b3d2;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #669ec0;
 
     cursor: pointer;

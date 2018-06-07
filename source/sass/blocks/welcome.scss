@@ -1,59 +1,54 @@
 .welcome {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .welcome__photo {
+  position: relative;
 
-    position: relative;
-    overflow: hidden;
-
-
-    margin-bottom: 61px;
+  margin-bottom: 61px;
+  overflow: hidden;
 }
 
 .welcome__image {
-    display: block;
+  display: block;
 }
 
 
 .welcome__photo:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
 
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 57px;
-    content: '';
-    background: url('../img/bottom.png') no-repeat;
-    background-position: bottom;
-    background-size: 100%;
+  width: 100%;
+  height: 57px;
+
+  background: url("../img/bottom.png") no-repeat;
+  background-position: bottom;
+  background-size: 100%;
 }
 
 .intro-bottom {
-    padding: 60px 6% 53px 6%;
+  padding: 60px 6% 53px 6%;
 }
 
 .welcome__title {
-    line-height: 26px;
-    width: 500px;
-    margin: 0 auto;
-    margin-bottom: 27px;
-    padding: 0;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  padding: 0;
 
-    text-align: center;
-    text-transform: uppercase;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .welcome__reason {
-text-align: center;
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 
-font-size: 14px;
-
-line-height: 26px;
-
-
-    text-transform: uppercase;
-
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
 }

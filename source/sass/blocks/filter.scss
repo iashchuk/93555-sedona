@@ -1,34 +1,27 @@
 .filter {
-    height: 217px;
-    background-color: #44749c;
-    background-image: url("../img/hotels-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-        padding-top: 27px;
-        padding-right: 71px;
-        padding-bottom: 30px;
-        padding-left: 72px;
+  height: 217px;
+  padding-top: 27px;
+  padding-right: 71px;
+  padding-bottom: 30px;
+  padding-left: 72px;
 
+  background-color: #44749c;
+  background-image: url("../img/hotels-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
 .filter__form {
-display: flex;
-
-
+  display: flex;
 }
 
 
 .filter__infrastructure {
-margin-right: 119px;
-}
-
-
-.filter__house {
-
+  margin-right: 119px;
 }
 
 
 .filter__price {
-margin-left: auto;
+  margin-left: auto;
 }
