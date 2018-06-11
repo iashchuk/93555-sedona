@@ -241,7 +241,16 @@ a {
   padding-right: 55px;
   padding-bottom: 55px;
   padding-left: 57px;
-  background-color: #ffffff; }
+  z-index: 1;
+  background-color: #ffffff;
+  opacity: 0;
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in; }
+
+.hotel-search__show {
+  opacity: 1;
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in; }
 
 .hotel-search__item {
   position: relative;
@@ -379,6 +388,7 @@ a {
   text-transform: uppercase; }
 
 .search__link {
+  position: relative;
   display: block;
   width: 568px;
   margin: 0 auto;
@@ -391,7 +401,9 @@ a {
   line-height: 24px;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: #766357; }
+  z-index: 10;
+  background-color: #766357;
+  cursor: pointer; }
   .search__link:hover, .search__link:focus {
     background-color: #604e43; }
   .search__link:active {

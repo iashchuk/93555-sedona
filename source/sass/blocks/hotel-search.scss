@@ -10,8 +10,16 @@
   padding-right: 55px;
   padding-bottom: 55px;
   padding-left: 57px;
-
+  z-index: 1;
   background-color: #ffffff;
+  opacity: 0;
+  transition: all 0.7s ease-in;
+
+}
+
+.hotel-search__show {
+    opacity: 1;
+    transition: all 0.7s ease-in;
 }
 
 

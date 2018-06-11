@@ -28,6 +28,7 @@
 }
 
 .search__link {
+  position: relative;
   display: block;
   width: 568px;
   margin: 0 auto;
@@ -41,8 +42,9 @@
   line-height: 24px;
   color: #ffffff;
   text-transform: uppercase;
-
+  z-index: 10;
   background-color: #766357;
+  cursor: pointer;
 
   &:hover,
   &:focus {
