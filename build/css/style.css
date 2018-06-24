@@ -239,6 +239,76 @@ a {
 .advantage__item--souvenir::before {
   background: url("../img/icon-3.png") no-repeat center center; }
 
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    opacity: 0; }
+  40% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+    opacity: 0; }
+  80% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px); }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(-500px);
+            transform: translateY(-500px);
+    opacity: 0; }
+  40% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+    opacity: 0; }
+  80% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px); }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px); }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px); } }
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px); }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px); } }
+
 .hotel-search {
   position: absolute;
   display: -webkit-box;
@@ -255,16 +325,23 @@ a {
   padding-right: 55px;
   padding-bottom: 55px;
   padding-left: 57px;
-  z-index: 1;
-  background-color: #ffffff;
-  opacity: 0;
-  -webkit-transition: all 0.7s ease-in;
-  transition: all 0.7s ease-in; }
+  z-index: -1;
+  background-color: #ffffff; }
+
+.hotel-search__hide {
+  display: none; }
 
 .hotel-search__show {
-  opacity: 1;
-  -webkit-transition: all 0.7s ease-in;
-  transition: all 0.7s ease-in; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  -webkit-animation: bounce 0.5s;
+          animation: bounce 0.5s; }
+
+.hotel-search__error {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s; }
 
 .hotel-search__item {
   position: relative;
@@ -318,6 +395,18 @@ a {
   .hotel-search__input:focus {
     background-color: #ffffff;
     border: 2px solid #e5e5e5; }
+
+.hotel-search__input::-webkit-input-placeholder {
+  color: #000000; }
+
+.hotel-search__input:-ms-input-placeholder {
+  color: #000000; }
+
+.hotel-search__input::-ms-input-placeholder {
+  color: #000000; }
+
+.hotel-search__input::placeholder {
+  color: #000000; }
 
 .hotel-search__input--adults,
 .hotel-search__input--children {
@@ -433,6 +522,9 @@ a {
   background-repeat: no-repeat;
   background-position: center -115px;
   background-size: cover; }
+
+.map__google {
+  border: none; }
 
 .site-footer {
   display: -webkit-box;
