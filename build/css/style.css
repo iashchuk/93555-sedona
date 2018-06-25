@@ -1,3 +1,15 @@
+@font-face {
+  font-weight: 400;
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff"); }
+
+@font-face {
+  font-weight: 700;
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff"); }
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -38,18 +50,6 @@ img {
 
 a {
   text-decoration: none; }
-
-@font-face {
-  font-weight: 400;
-  font-family: "PT Sans";
-  font-style: normal;
-  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff"); }
-
-@font-face {
-  font-weight: 700;
-  font-family: "PT Sans";
-  font-style: normal;
-  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff"); }
 
 .container {
   width: 1200px;
@@ -763,9 +763,6 @@ a {
   font-size: 24px;
   line-height: 15px;
   color: #81b3d2; }
-  .card__symbol:hover, .card__symbol:focus {
-    color: #669ec0;
-    cursor: pointer; }
 
 .card__mark {
   display: block;
@@ -949,9 +946,6 @@ a {
 .option-filter__item {
   margin-top: 25px; }
 
-.option-filter__checkbox {
-  display: none; }
-
 .option-filter__label {
   position: relative;
   padding-left: 40px;
@@ -967,7 +961,7 @@ a {
     background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat; }
 
-.option-filter__checkbox:checked ~ .option-filter__label::after {
+.option-filter__checkbox:checked + .option-filter__label::after {
   background-image: url("../img/checkbox-on.svg"); }
 
 .option-filter__checkbox:disabled + .option-filter__label::after {
@@ -975,6 +969,9 @@ a {
 
 .option-filter__checkbox:checked:disabled + .option-filter__label::after {
   background-image: url("../img/checkbox-on-disabled.svg"); }
+
+.option-filter__checkbox:focus + .option-filter__label::after {
+  outline: 2px auto #4d90fe; }
 
 .range-filter__title {
   margin: 0;
