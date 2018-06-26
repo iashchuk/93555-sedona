@@ -1,0 +1,33 @@
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.3333%;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.copyright__image {
+  padding-top: 5px;
+}
+
+.copyright__text {
+  margin: 0;
+  margin-right: 8px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.copyright__link:hover .copyright__path,
+.copyright__link:focus .copyright__path {
+    fill: #81b3d2;
+}
+
+.copyright__link:active .copyright__path  {
+    fill: #bdbbbc;
+}
+

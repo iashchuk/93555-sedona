@@ -1,0 +1,32 @@
+.filter {
+  min-height: 217px;
+  padding-top: 27px;
+  padding-right: 71px;
+  padding-bottom: 30px;
+  padding-left: 72px;
+
+  background-color: #44749c;
+  background-image: url("../img/hotels-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.filter__form {
+  display: flex;
+}
+
+
+.filter__infrastructure {
+  margin-right: 105px;
+  width: 150px;
+}
+
+.filter__house {
+    width: 150px;
+}
+
+.filter__price {
+  margin-left: auto;
+  width: 318px;
+}

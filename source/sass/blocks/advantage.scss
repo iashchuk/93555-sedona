@@ -1,0 +1,110 @@
+.advantage {
+  margin-bottom: 50px;
+}
+
+.advantage__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantage__row--gray {
+  background-color: #eeeeee;
+}
+
+.advantage__description {
+  width: 400px;
+  padding-top: 48px;
+  padding-right: 48px;
+  padding-bottom: 58px;
+  padding-left: 48px;
+
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+}
+
+.advantage__title {
+  width: 160px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+
+  font-size: 21px;
+}
+
+.advantage__number {
+  margin: 0 auto;
+  margin-bottom: 21px;
+  padding: 0;
+}
+
+.advantage__text {
+  margin: 0;
+  padding: 0;
+}
+
+.advantage__text--road {
+  width: 279px;
+}
+
+.advantage__row--reverse {
+  flex-direction: row-reverse;
+}
+
+.advantage__photo {
+  background-color: #81b3d2;
+}
+
+.advantage__image {
+    display: block;
+    background-position: center center;
+}
+
+.advantage__item {
+  width: 33.3333%;
+  padding-top: 48px;
+  padding-right: 59px;
+  padding-bottom: 60px;
+  padding-left: 58px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantage__item--icon {
+  position: relative;
+
+  padding-top: 163px;
+  padding-bottom: 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 56px;
+    left: 50%;
+
+    width: 80px;
+    height: 80px;
+
+    background: #81b3d2;
+    transform: translate(-50%);
+  }
+}
+
+.advantage__item--house {
+  &::before {
+    background: url("../img/icon-1.svg") no-repeat center center;
+  }
+}
+
+.advantage__item--food {
+  &::before {
+    background: url("../img/icon-2.svg") no-repeat center center;
+  }
+}
+.advantage__item--souvenir {
+  &::before {
+    background: url("../img/icon-3.svg") no-repeat center center;
+  }
+}

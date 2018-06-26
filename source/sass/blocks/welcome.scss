@@ -1,0 +1,55 @@
+.welcome {
+  padding-bottom: 50px;
+}
+
+.welcome__photo {
+  position: relative;
+
+  margin-bottom: 61px;
+  overflow: hidden;
+}
+
+.welcome__image {
+  display: block;
+}
+
+
+.welcome__photo:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 57px;
+
+  background: url("../img/bottom.png") no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+.intro-bottom {
+  padding: 60px 6% 53px 6%;
+}
+
+.welcome__title {
+  width: 450px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  padding: 0;
+
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+}
+
+.welcome__reason {
+  margin: 0 auto;
+  padding: 0;
+  width: 600px;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}

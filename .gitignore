@@ -8,11 +8,4 @@
 node_modules/
 npm-debug.*
 Thumbs.db
-source/
-.stylelintrc
-.travis.yml
-csscomb.json
-gulpfile.js
-package-lock.json
-package.json
 git-ignore/
